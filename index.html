@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>8-Image Mashup</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="image_mashup_8.js"></script>
+  <style>
+    body { text-align: center; font-family: sans-serif; background: #f0f0f0; }
+    canvas { border: 1px solid #ccc; margin-top: 10px; }
+    input, button { margin: 5px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h2>8-Image Mashup: Shapes + Strips</h2>
+  <div>
+    <p>Image 1 is the background. Others are used for cutouts.</p>
+    <input type="file" id="imgUpload1" accept="image/*" />
+    <input type="file" id="imgUpload2" accept="image/*" />
+    <input type="file" id="imgUpload3" accept="image/*" />
+    <input type="file" id="imgUpload4" accept="image/*" />
+    <input type="file" id="imgUpload5" accept="image/*" />
+    <input type="file" id="imgUpload6" accept="image/*" />
+    <input type="file" id="imgUpload7" accept="image/*" />
+    <input type="file" id="imgUpload8" accept="image/*" />
+  </div>
+  <br />
+  <button onclick="generateCollage()">Mash Up!</button>
+  <button onclick="saveCollage()">Save Image</button>
+</body>
+</html>
